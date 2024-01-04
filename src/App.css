@@ -1,0 +1,175 @@
+/*************** Home page ***************/
+/***** For Logo and Video *****/
+.App {
+    text-align: center;
+    min-width: 340px;
+    margin: 0 10px;
+}
+/* + Information page */
+.App-header #video,
+.Information-header #video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.App-header .App-logo {
+    height: 30vmin;
+    pointer-events: none;
+    opacity: 0.7;
+}
+header > h1 {
+    display: block;
+    position: relative;
+    z-index: 1;
+    opacity: 0.7;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #000;
+}
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/***** For Form *****/
+main {
+    z-index: 1;
+}
+input {
+    margin: 1em;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+}
+.App .App-main form {
+    text-align: center;
+}
+
+/* No incrementing and decrementing for entering numbers for different browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    --moz-appearance: textfield;
+}
+
+/* Buttons */
+.App .App-main form .btn {
+    width: 10em;
+    background-color: #50bfd8;
+    color: #000;
+    cursor: pointer;
+}
+.App form .btn:hover {
+    background-color: #000;
+    color: #50bfd8;
+    transition: 0.3s;
+}
+
+/***** After searching *****/
+.App .App-main form .input-info {
+    width: 20em;
+    background-color: #d1dde5;
+}
+
+/* JSON file */
+pre {
+    font-size: calc(10px + 1vmin);
+    text-align: left;
+    font-family: "Courier New", Courier, monospace;
+    border-radius: 5px;
+    background-color: #d1dde5;
+    opacity: 0.7;
+    color: #000;
+    padding: 1em;
+    z-index: 1;
+}
+#info-data {
+    display: none;
+    z-index: 1;
+    min-width: 340px;
+}
+
+/* Button-link to another page */
+#info-data .Link {
+    width: 100%;
+    height: 100%;
+}
+
+/* + Information page */
+#info-data .Link .btn,
+.Information-main .Link .btn {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+    padding: 1em 0;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #50bfd8;
+    color: #000;
+}
+
+/* + Information page */
+#info-data .Link .btn:hover,
+.Information-main .Link .btn:hover {
+    background-color: #000;
+    color: #50bfd8;
+    transition: 0.3s;
+}
+
+/***** Footer *****/
+footer {
+    z-index: 1;
+}
+
+/*************** Information page ***************/
+.App-link {
+    color: #000;
+    padding: 0.3em 0;
+    border-radius: 3px;
+}
+.App-link:hover {
+    color: #50bfd8;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.Information-main {
+    text-align: left;
+    min-width: 340px;
+}
+.Information-main nav {
+    min-width: 340px;
+    display: block;
+    position: relative;
+}
+.Information-main .Link .btn {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}

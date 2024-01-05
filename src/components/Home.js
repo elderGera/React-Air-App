@@ -95,7 +95,7 @@ function Home() {
                     <div className="Link">
                         <a
                             className="btn"
-                            href="/information"
+                            href="./information"
                             onClick={() => {
                                 window.scroll({
                                     top: 0,

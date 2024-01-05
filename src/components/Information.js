@@ -91,7 +91,7 @@ function Information() {
                     </a>
                 </p>
                 <div className="Link">
-                    <a className="btn" href="/">
+                    <a className="btn" href="../">
                         &larr; Home
                     </a>
                 </div>
